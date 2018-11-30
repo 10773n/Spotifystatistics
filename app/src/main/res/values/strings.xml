@@ -13,4 +13,16 @@
     <string name="tab_text_2">ARTISTS</string>
     <string name="tab_text_3">GENRES</string>
     <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="log_in">Log in</string>
+    <string name="spotify_password">Spotify password</string>
+    <string name="spotify_username">Spotify username</string>
+    <string name="todo">TODO</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="settings">SETTINGS</string>
+    <string name="remember_me">Remember me</string>
+    <string name="log_in_with_facebook">LOG IN WITH FACEBOOK</string>
+    <string name="or">OR</string>
+    <string name="statisfy">Statisfy</string>
+
 </resources>
