@@ -37,6 +37,7 @@ public class LogInActvity extends AppCompatActivity {
                 EditText passwordET = findViewById(R.id.ETpassword);
                 String username = usernameET.getText().toString();
                 String password = passwordET.getText().toString();
+                boolean exists = false;
 
                 //Search for username/password in JSON-file in assets
                 try{
@@ -53,13 +54,16 @@ public class LogInActvity extends AppCompatActivity {
                         //If username and password exists in the JSON-file, then log in the user and move to TabbedActivity
                         if(userObjectUsername.equals(username)){
                             if (userObjectPassword.equals(password)){
+                                exists = true;
                                 startActivity(new Intent(LogInActvity.this, TabbedActivity.class));
                             }
                         }
                     }
                     //Pop-up, user not found
-                    Toast.makeText(LogInActvity.this, "Incorrect username or password, try again!",
-                            Toast.LENGTH_LONG).show();
+                    if(!exists){
+                        Toast.makeText(LogInActvity.this, "Incorrect username or password, please try again!",
+                                Toast.LENGTH_LONG).show();
+                    }
                 } catch(JSONException ex){
                     ex.printStackTrace();
                 }

@@ -1,8 +1,25 @@
 {"users": [
-{
-"username":"10773n", 
-"password":"hej123"},
-{"username":"henrik", 
-"password":"hejdå321"}
+  {
+    "username":"10773n",
+    "password":"hej123",
+    "top_songs" : [
+      {"song1" :"Gold"},
+      {"song2" :"Running away"},
+      {"song3" :"Loyal"},
+      {"song4" :"Sorrow doesn't resurrect"},
+      {"song5" :"Many words"}
+    ],
+    "top_artist" : [
+      {"artist1" :"San Holo"},
+      {"artist2" :"Droeloe"},
+      {"artist3" :"Crystal castles"},
+      {"artist4" :"August burns red"},
+      {"artist5" :"Parkway drive"}
+    ]
+
+  },
+
+  {"username":"benny",
+    "password":"hejdå321"}
 ]
 }
