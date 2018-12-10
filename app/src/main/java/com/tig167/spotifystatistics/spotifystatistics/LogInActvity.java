@@ -26,7 +26,7 @@ public class LogInActvity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
-        login_button = (Button)findViewById(R.id.Blogin);
+        login_button = findViewById(R.id.Blogin);
         // link button with tab1
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,7 +75,7 @@ public class LogInActvity extends AppCompatActivity {
 
     //read JSON-file from assets
     public String loadJSONFromAssets(){
-        String json = null;
+        String json;
         try{
             InputStream is = this.getAssets().open("users.json");
             int size = is.available();
