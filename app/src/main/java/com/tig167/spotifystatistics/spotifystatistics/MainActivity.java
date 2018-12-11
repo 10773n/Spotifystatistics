@@ -26,11 +26,6 @@ public class MainActivity extends AppCompatActivity {
     public void setupList(){
         //populate list
         artists = new ArrayList<Artist>();
-        artists.add(new Artist("DROELOE"));
-        artists.add(new Artist("August burns red"));
-        artists.add(new Artist("Crystal castles"));
-        artists.add(new Artist("Dunderpatrullen"));
-        artists.add(new Artist("Parkway drive"));
 
         //Lookup ListView
         listView=(ListView)findViewById(R.id.LVartists);
