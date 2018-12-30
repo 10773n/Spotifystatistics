@@ -1,7 +1,5 @@
 package com.tig167.spotifystatistics.spotifystatistics;
 
-
-import com.tig167.spotifystatistics.spotifystatistics.LruBitmapCache;
 import android.app.Application;
 import android.text.TextUtils;
 
@@ -10,6 +8,9 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 
+/*
+This class keeps track off the request queue.
+ */
 public class AppController extends Application {
 
     public static final String TAG = AppController.class.getSimpleName();

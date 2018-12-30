@@ -5,8 +5,12 @@ import com.android.volley.toolbox.ImageLoader.ImageCache;
 import android.graphics.Bitmap;
 import android.support.v4.util.LruCache;
 
+/*
+This class is used to cache url-pictures.
+ */
 public class LruBitmapCache extends LruCache<String, Bitmap> implements
         ImageCache {
+    // method for calculating cache size
     public static int getDefaultLruCacheSize() {
         final int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);
         final int cacheSize = maxMemory / 8;

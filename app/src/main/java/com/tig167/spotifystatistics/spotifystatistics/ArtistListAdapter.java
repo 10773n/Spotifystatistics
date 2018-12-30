@@ -2,16 +2,20 @@ package com.tig167.spotifystatistics.spotifystatistics;
 
 import java.util.List;
 
-        import android.app.Activity;
-        import android.content.Context;
-        import android.view.LayoutInflater;
-        import android.view.View;
-        import android.view.ViewGroup;
-        import android.widget.BaseAdapter;
-        import android.widget.TextView;
+import android.app.Activity;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
 
-        import com.android.volley.toolbox.ImageLoader;
-        import com.android.volley.toolbox.NetworkImageView;
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
+
+/*
+This class makes it possible to create a listAdapter specific for artist objects.
+ */
 
 public class ArtistListAdapter extends BaseAdapter {
     private Activity activity;
@@ -50,17 +54,17 @@ public class ArtistListAdapter extends BaseAdapter {
 
         if (imageLoader == null)
             imageLoader = AppController.getInstance().getImageLoader();
-        NetworkImageView thumbNail = (NetworkImageView) convertView
-                .findViewById(R.id.thumbnail);
+        NetworkImageView artistPicture = (NetworkImageView) convertView
+                .findViewById(R.id.artistPicture);
         TextView tv_artist = (TextView) convertView.findViewById(R.id.tv_artist);
 
         // getting artist data for the row
         Artist a = artistItems.get(position);
 
-        // thumbnail image
-        thumbNail.setImageUrl(a.getArtistPicture(), imageLoader);
+        // set artist picture
+        artistPicture.setImageUrl(a.getArtistPicture(), imageLoader);
 
-        // artist
+        // set artist name
         tv_artist.setText(a.getArtistName());
 
         return convertView;
