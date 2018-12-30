@@ -73,7 +73,7 @@ public class Tab2Artists extends Fragment {
                                 artists.add(newArtist);
 
                                 // Create and sets a ListAdapter for user display containing artists
-                                ListAdapter adapter = new ArrayAdapter<Artist>(getContext(),android.R.layout.simple_list_item_1,artists);
+                                ListAdapter adapter = new ArtistListAdapter(getActivity(), artists);
                                 listView.setAdapter(adapter);
                             }
                         // If a JSONException is caught, print what went wrong

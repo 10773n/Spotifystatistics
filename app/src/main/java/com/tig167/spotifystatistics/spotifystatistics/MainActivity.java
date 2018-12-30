@@ -24,13 +24,13 @@ public class MainActivity extends AppCompatActivity {
     private List<Artist> artists;
 
     public void setupList(){
-        //populate list
+        // populate list
         artists = new ArrayList<Artist>();
 
-        //Lookup ListView
+        // Lookup ListView
         listView=(ListView)findViewById(R.id.LVartists);
 
-        //Create adapter
+        // Create adapter
         adapter = new ArrayAdapter<Artist>(this,android.R.layout.simple_list_item_1,artists);
 
         listView.setAdapter(adapter);

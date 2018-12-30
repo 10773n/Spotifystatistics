@@ -17,8 +17,12 @@ public class Artist {
         this.rank = rank;
     }
 
-    public void setPicture(String picture) {
+    public void setArtistPicture(String picture) {
         this.artistPicture = picture;
+    }
+
+    public String getArtistPicture(){
+        return artistPicture;
     }
 
     public String getArtistName(){
