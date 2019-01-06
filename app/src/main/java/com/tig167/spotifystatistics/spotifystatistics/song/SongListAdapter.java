@@ -1,4 +1,4 @@
-package com.tig167.spotifystatistics.spotifystatistics;
+package com.tig167.spotifystatistics.spotifystatistics.song;
 
 import java.util.List;
 
@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
+import com.tig167.spotifystatistics.spotifystatistics.AppController;
+import com.tig167.spotifystatistics.spotifystatistics.R;
 
 /*
 This class makes it possible to create a listAdapter specific for song objects.

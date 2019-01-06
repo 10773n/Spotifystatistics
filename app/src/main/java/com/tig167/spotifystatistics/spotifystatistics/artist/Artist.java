@@ -1,4 +1,4 @@
-package com.tig167.spotifystatistics.spotifystatistics;
+package com.tig167.spotifystatistics.spotifystatistics.artist;
 
 public class Artist {
 

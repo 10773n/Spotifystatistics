@@ -11,6 +11,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.tig167.spotifystatistics.spotifystatistics.artist.Tab2Artists;
+import com.tig167.spotifystatistics.spotifystatistics.genre.Tab3Genres;
+import com.tig167.spotifystatistics.spotifystatistics.song.Tab1Songs;
+
 public class TabbedActivity extends AppCompatActivity {
 
     /**

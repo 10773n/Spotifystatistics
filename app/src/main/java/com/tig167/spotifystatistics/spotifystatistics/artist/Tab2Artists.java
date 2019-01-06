@@ -1,11 +1,10 @@
-package com.tig167.spotifystatistics.spotifystatistics;
+package com.tig167.spotifystatistics.spotifystatistics.artist;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
@@ -15,6 +14,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.tig167.spotifystatistics.spotifystatistics.LogInActvity;
+import com.tig167.spotifystatistics.spotifystatistics.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -47,7 +48,7 @@ public class Tab2Artists extends Fragment {
 
     public void setupList(){
         // URL to the endpoint containing the JSON we want to parse
-        String url = "https://api.myjson.com/bins/orviw";
+        String url = "http://localhost:8080/statistics/artist?artist_user_id=" + LogInActvity.loggedInUser.getId();
         // Creates a list for the Artist objects
         final List<Artist> artists = new ArrayList<Artist>();
 

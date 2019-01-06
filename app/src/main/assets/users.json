@@ -1,10 +1,13 @@
 {"users": [
   {
+    "id":"2",
     "username":"10773n",
     "password":"hej123"
   },
 
-  {"username":"benny",
+  {
+    "id":"1",
+    "username":"apelipell",
     "password":"hejdå321"}
 ]
 }

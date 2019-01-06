@@ -20,6 +20,7 @@ import java.util.HashMap;
 public class LogInActvity extends AppCompatActivity {
 
     Button login_button;
+    public static User loggedInUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +51,13 @@ public class LogInActvity extends AppCompatActivity {
                         JSONObject userObject = usersArray.getJSONObject(i);
                         String userObjectUsername = userObject.getString("username");
                         String userObjectPassword = userObject.getString("password");
+                        String userObjectId = userObject.getString("id");
 
                         //If username and password exists in the JSON-file, then log in the user and move to TabbedActivity
                         if(userObjectUsername.equals(username)){
                             if (userObjectPassword.equals(password)){
                                 exists = true;
+                                loggedInUser = new User(userObjectUsername, userObjectPassword, userObjectId);
                                 startActivity(new Intent(LogInActvity.this, TabbedActivity.class));
                             }
                         }
