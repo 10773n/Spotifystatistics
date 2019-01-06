@@ -3,18 +3,13 @@ package com.tig167.spotifystatistics.spotifystatistics;
 public class Artist {
 
     private String artistName;
-    private int userId;
     private String artistPicture;
-    private int rank;
+    private int artistRank;
 
     public Artist(String name, String picture, int rank){
         this.artistName = name;
         this.artistPicture = picture;
-        this.rank = rank;
-    }
-
-    public void setRank(int rank) {
-        this.rank = rank;
+        this.artistRank = rank;
     }
 
     public void setArtistPicture(String picture) {

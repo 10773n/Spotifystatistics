@@ -40,13 +40,14 @@ public class Tab2Artists extends Fragment {
 
         // Runs the method of creating Artist objects and populating the listView.
         setupList();
+
         // Returns the view
         return rootView;
     }
 
     public void setupList(){
         // URL to the endpoint containing the JSON we want to parse
-        String url = "https://api.myjson.com/bins/yen38";
+        String url = "https://api.myjson.com/bins/orviw";
         // Creates a list for the Artist objects
         final List<Artist> artists = new ArrayList<Artist>();
 
@@ -67,7 +68,7 @@ public class Tab2Artists extends Fragment {
                                 JSONObject jsonA = jsonArray.getJSONObject(i);
                                 String name = jsonA.getString("artist_name");
                                 String picture = jsonA.getString("artist_picture");
-                                int rank = jsonA.getInt("rank");
+                                int rank = jsonA.getInt("artist_rank");
 
                                 Artist newArtist = new Artist(name, picture, rank);
                                 artists.add(newArtist);
