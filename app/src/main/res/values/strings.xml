@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Spotify statistics</string>
+    <string name="app_name">Statisfy</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
@@ -24,5 +24,7 @@
     <string name="log_in_with_facebook">LOG IN WITH FACEBOOK</string>
     <string name="or">OR</string>
     <string name="statisfy">Statisfy</string>
+    <string name="coming_soon">Coming soon</string>
+
 
 </resources>
