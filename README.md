@@ -10,12 +10,11 @@ The application is made for spotify users to be able to get their own top artist
 
 This application is made with android studio that is connecting to a localhost servlet. The application takes premade users and their music information to make toplists in the three different tabs - artist, songs and genres (the last one is coming soon). The servlet application is only a temporary solution. The goal is to integrate Spotifys API with the application to show real user data. To learn more about Spotify's API, go to : https://developer.spotify.com/documentation/android/#api-documentation
 
-Before you can start the application you need to put your local IP in the variable myIP in;
+Before you can start the application you need to put your local IP in the variable myIP in the files listed under this paragraph. You can find your local IP by opening a command prompt and type in "ipconfig". It should look something like 192.168.X.X.
    
-    Tab1songs under spotifystatistics\song\Tab1Songs.java 
+    Tab1songs under spotifystatistics/song/Tab1Songs.java 
     and
-    Tab2Artists under spotifystatistics\artist\Tab2Artists.java
-You can find your local IP by opening a command prompt and type in "ipconfig". It should look something like 192.168.X.X.
+    Tab2Artists under spotifystatistics/artist/Tab2Artists.java
 
 Information about the users is currently in users under Spotifystatistics\app\src\main\assets\users.json. To log in you must choose one of the two users that excists at the moment: 
 
