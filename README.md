@@ -12,11 +12,9 @@ This application is made with android studio that is connecting to a localhost s
 
 Before you can start the application you need to put your local IP in the variable myIP in;
    
-   Tab1songs under spotifystatistics\song\Tab1Songs.java 
-   
-   and
-   
-   Tab2Artists under spotifystatistics\artist\Tab2Artists.java
+    Tab1songs under spotifystatistics\song\Tab1Songs.java 
+    and
+    Tab2Artists under spotifystatistics\artist\Tab2Artists.java
 
 You can find your local IP by opening a command prompt and type in "ipconfig". It should look something like 192.168.X.X.
 
