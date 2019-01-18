@@ -10,7 +10,7 @@ The application is made for spotify users to be able to get their own top artist
 
 This application is made with android studio that is connecting to a localhost servlet. The application takes premade users and their music information to make toplists in the three different tabs - artist, songs and genres (the last one is coming soon). The servlet application is only a temporary solution. The goal is to integrate Spotifys API with the application to show real user data. To learn more about Spotify's API, go to : https://developer.spotify.com/documentation/android/#api-documentation
 
-To log in you must choose one of the two users that excists at the moment: 
+Information about the users is currently in users under Spotifystatistics\app\src\main\assets\users.json. To log in you must choose one of the two users that excists at the moment: 
 
     username : 10773n
     password : hej123 
