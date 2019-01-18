@@ -28,6 +28,7 @@ public class Tab1Songs extends Fragment {
 
     private ListView listView;
     private RequestQueue mQueue;
+    private String myIP = ""; // Put in your local IP-adress between the " " !
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -47,7 +48,7 @@ public class Tab1Songs extends Fragment {
 
     public void setupList(){
         // URL to the endpoint containing the JSON we want to parse
-        String url = "http://localhost:8080/statistics/song?song_user_id=" + LogInActvity.loggedInUser.getId();
+        String url = "http://" + myIP + "8080/statistics/song?song_user_id=" + LogInActvity.loggedInUser.getId();
         // Creates a list for the Song objects
         final List<Song> songs = new ArrayList<Song>();
 
