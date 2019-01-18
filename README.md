@@ -15,7 +15,6 @@ Before you can start the application you need to put your local IP in the variab
     Tab1songs under spotifystatistics\song\Tab1Songs.java 
     and
     Tab2Artists under spotifystatistics\artist\Tab2Artists.java
-
 You can find your local IP by opening a command prompt and type in "ipconfig". It should look something like 192.168.X.X.
 
 Information about the users is currently in users under Spotifystatistics\app\src\main\assets\users.json. To log in you must choose one of the two users that excists at the moment: 
